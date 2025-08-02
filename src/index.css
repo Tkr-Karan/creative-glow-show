@@ -140,12 +140,38 @@ All colors MUST be HSL.
 
   .card-hover:hover {
     transform: translateY(-5px);
-    box-shadow: var(--neon-glow);
-    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 30px hsl(var(--electric-blue) / 0.4);
+    background: rgba(197, 255, 255, 0.08);
+    border-color: hsl(var(--electric-blue) / 0.5);
   }
 
   .pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite alternate;
+  }
+
+  .tech-button {
+    transition: all 0.3s ease;
+    background: rgba(197, 235, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(var(--electric-blue) / 0.3);
+    animation: float-tech 8s ease-in-out infinite;
+  }
+
+  .tech-button:hover {
+    background: hsl(var(--electric-blue) / 0.2);
+    border-color: hsl(var(--electric-blue));
+    box-shadow: 0 0 20px hsl(var(--electric-blue) / 0.6);
+    transform: scale(1.05) translateY(-2px);
+  }
+
+  .tech-globe {
+    animation: spin-slow 20s linear infinite, pulse-glow 3s ease-in-out infinite alternate;
+  }
+
+  .button-hover:hover {
+    background: hsl(var(--electric-blue) / 0.2);
+    border-color: hsl(var(--electric-blue));
+    box-shadow: 0 0 25px hsl(var(--electric-blue) / 0.5);
   }
 }
 
@@ -184,4 +210,28 @@ All colors MUST be HSL.
     hsl(var(--accent) / 0.1));
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float-tech {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  50% {
+    transform: translateY(-5px) translateX(-3px);
+  }
+  75% {
+    transform: translateY(-15px) translateX(2px);
+  }
 }

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ChevronDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { ChevronDown, Github, Linkedin, Mail, Phone, Globe, Code, Database, Smartphone } from "lucide-react";
 import TypewriterEffect from "@/components/TypewriterEffect";
 
 const Hero = () => {
@@ -11,12 +12,44 @@ const Hero = () => {
     "Tech Enthusiast"
   ];
 
+  const techStack = [
+    { name: "React", icon: <Code className="h-4 w-4" /> },
+    { name: "TypeScript", icon: <Code className="h-4 w-4" /> },
+    { name: "Node.js", icon: <Database className="h-4 w-4" /> },
+    { name: "Tailwind", icon: <Smartphone className="h-4 w-4" /> },
+    { name: "MongoDB", icon: <Database className="h-4 w-4" /> },
+    { name: "Next.js", icon: <Globe className="h-4 w-4" /> }
+  ];
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
     <section className="min-h-screen flex items-center justify-center relative animated-bg overflow-hidden">
+      {/* Tech Globe - centered */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <Globe className="tech-globe h-64 w-64 text-electric-blue opacity-10" />
+      </div>
+
+      {/* Floating Tech Stack Buttons */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {techStack.map((tech, index) => (
+          <Badge
+            key={tech.name}
+            className={`tech-button absolute cursor-default pointer-events-auto flex items-center gap-2 px-4 py-2`}
+            style={{
+              top: `${20 + (index * 12)}%`,
+              left: `${15 + (index % 2) * 70}%`,
+              animationDelay: `${index * 1.5}s`
+            }}
+          >
+            {tech.icon}
+            <span>{tech.name}</span>
+          </Badge>
+        ))}
+      </div>
+
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="floating absolute top-20 left-10 w-4 h-4 bg-primary rounded-full opacity-60"></div>
