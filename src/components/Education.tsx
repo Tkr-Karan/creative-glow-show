@@ -5,19 +5,6 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "B.Tech in Computer Science",
-      institution: "KCC Institute Of Technology and Management",
-      duration: "Aug 2017 - Oct 2021",
-      location: "Punjab, India",
-      grade: "B.S. in Computer Science",
-      highlights: [
-        "Graduated with excellent academic performance",
-        "Active participation in coding competitions",
-        "Completed various software development projects",
-        "Strong foundation in computer science fundamentals"
-      ]
-    },
-    {
       degree: "Master's Degree",
       institution: "Woolf University",
       duration: "March 2022 - Present",
@@ -28,6 +15,19 @@ const Education = () => {
         "Modern web development frameworks",
         "System design and architecture",
         "Industry best practices and methodologies"
+      ]
+    },
+    {
+      degree: "B.Tech in Computer Science",
+      institution: "KCC Institute Of Technology and Management",
+      duration: "Aug 2017 - Oct 2021",
+      location: "Punjab, India",
+      grade: "B.S. in Computer Science",
+      highlights: [
+        "Graduated with excellent academic performance",
+        "Active participation in coding competitions",
+        "Completed various software development projects",
+        "Strong foundation in computer science fundamentals"
       ]
     }
   ];

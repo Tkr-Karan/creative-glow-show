@@ -1,7 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import TypewriterEffect from "@/components/TypewriterEffect";
 
 const Hero = () => {
+  const typewriterTexts = [
+    "Software Developer Engineer",
+    "Frontend Developer", 
+    "React Specialist",
+    "Passionate Learner",
+    "Tech Enthusiast"
+  ];
+
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -21,9 +30,9 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
             Karan Kumar
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-            Software Developer Engineer
-          </p>
+          <div className="mb-6 h-8">
+            <TypewriterEffect texts={typewriterTexts} />
+          </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             React Developer with 3+ years of experience building high-performance UIs with TypeScript, Tailwind CSS, and modern frameworks. Passionate about web3 integration and seamless user experiences.
           </p>
