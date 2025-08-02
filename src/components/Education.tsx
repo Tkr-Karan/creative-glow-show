@@ -18,11 +18,11 @@ const Education = () => {
       ]
     },
     {
-      degree: "Scalar Academy",
-      institution: "Software Engineering Program",
+      degree: "Master's Degree",
+      institution: "Woolf University",
       duration: "March 2022 - Present",
       location: "Online",
-      grade: "Advanced Certification",
+      grade: "In Progress",
       highlights: [
         "Advanced software engineering practices",
         "Modern web development frameworks",
