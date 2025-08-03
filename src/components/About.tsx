@@ -18,11 +18,11 @@ const About = () => {
       title: "Mobile Development",
       description: "React Native, Progressive Web Apps"
     },
-    {
-      icon: <Globe className="h-8 w-8 text-cyber-purple" />,
-      title: "Web3 Integration",
-      description: "Blockchain, Smart Contracts, DeFi"
-    }
+    // {
+    //   icon: <Globe className="h-8 w-8 text-cyber-purple" />,
+    //   title: "Web3 Integration",
+    //   description: "Blockchain, Smart Contracts, DeFi"
+    // }
   ];
 
   return (
@@ -38,7 +38,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {highlights.map((highlight, index) => (
             <Card 
               key={index} 

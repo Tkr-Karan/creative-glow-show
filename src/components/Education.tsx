@@ -14,8 +14,8 @@ const Education = () => {
         "Advanced software engineering practices",
         "Modern web development frameworks",
         "System design and architecture",
-        "Industry best practices and methodologies"
-      ]
+        "Industry best practices and methodologies",
+      ],
     },
     {
       degree: "B.Tech in Computer Science",
@@ -27,9 +27,9 @@ const Education = () => {
         "Graduated with excellent academic performance",
         "Active participation in coding competitions",
         "Completed various software development projects",
-        "Strong foundation in computer science fundamentals"
-      ]
-    }
+        "Strong foundation in computer science fundamentals",
+      ],
+    },
   ];
 
   const certifications = [
@@ -37,8 +37,7 @@ const Education = () => {
     "TypeScript Professional",
     "Node.js Backend Development",
     "MongoDB Database Design",
-    "Web3 Development Fundamentals",
-    "System Design Principles"
+    "System Design Principles",
   ];
 
   return (
@@ -49,14 +48,15 @@ const Education = () => {
             Education & Learning
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            My academic background and continuous learning journey in technology and software development.
+            My academic background and continuous learning journey in technology
+            and software development.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-8 mb-16">
           {education.map((edu, index) => (
-            <Card 
-              key={index} 
+            <Card
+              key={index}
               className="card-hover group"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
@@ -90,12 +90,15 @@ const Education = () => {
                   </Badge>
                 </div>
               </CardHeader>
-              
+
               <CardContent className="pt-0">
                 <ul className="space-y-2">
                   {edu.highlights.map((highlight, i) => (
-                    <li key={i} className="text-muted-foreground flex items-start gap-2">
-                      <span className="text-primary mt-2">•</span>
+                    <li
+                      key={i}
+                      className="text-muted-foreground flex items-baseline gap-2"
+                    >
+                      <span className="text-primary mt-2">💥</span>
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -114,7 +117,7 @@ const Education = () => {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {certifications.map((cert, index) => (
-                <div 
+                <div
                   key={index}
                   className="p-4 rounded-lg border border-border hover:border-primary transition-colors hover:bg-primary/5"
                   style={{ animationDelay: `${index * 0.1}s` }}

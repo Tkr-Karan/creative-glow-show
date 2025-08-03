@@ -26,7 +26,7 @@ const Skills = () => {
         { name: "MongoDB", level: 75 },
         { name: "MySQL", level: 70 },
         { name: "REST APIs", level: 85 },
-        { name: "GraphQL", level: 65 }
+        // { name: "GraphQL", level: 65 }
       ]
     },
     {
@@ -34,8 +34,8 @@ const Skills = () => {
       icon: <Smartphone className="h-6 w-6" />,
       skills: [
         { name: "React Native", level: 75 },
-        { name: "Web3.js", level: 70 },
-        { name: "Blockchain", level: 65 },
+        // { name: "Web3.js", level: 70 },
+        // { name: "Blockchain", level: 65 },
         { name: "PWA", level: 80 },
         { name: "Responsive Design", level: 95 },
         { name: "Performance Optimization", level: 85 }

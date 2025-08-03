@@ -14,33 +14,33 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      value: "karanpreet6154@gmail.com",
-      href: "mailto:karanpreet6154@gmail.com"
+      value: "kumarkaran427@outlook.com",
+      href: "mailto:kumarkaran427@outlook.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Phone",
-      value: "+91 9316455703",
-      href: "tel:+919316455703"
+      value: "+91 9315455783",
+      href: "tel:+919315455783",
     },
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/karan-kumar",
-      href: "https://linkedin.com/in/karan-kumar"
+      value: "https://www.linkedin.com/in/karankumar07/",
+      href: "https://linkedin.com/in/karankumar07/",
     },
     {
       icon: <Github className="h-6 w-6" />,
       label: "GitHub",
-      value: "github.com/karanpreet",
-      href: "https://github.com/karanpreet"
-    }
+      value: "https://github.com/Tkr-Karan",
+      href: "https://github.com/Tkr-Karan",
+    },
   ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -59,7 +59,8 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I'm always open to discussing new opportunities, interesting
+            projects, or just having a chat about technology.
           </p>
         </div>
 
@@ -68,9 +69,13 @@ const Contact = () => {
           <div className="space-y-8">
             <Card className="card-hover">
               <CardHeader>
-                <h3 className="text-2xl font-bold gradient-text">Let's Connect</h3>
+                <h3 className="text-2xl font-bold gradient-text">
+                  Let's Connect
+                </h3>
                 <p className="text-muted-foreground">
-                  Feel free to reach out through any of these channels. I'm always excited to connect with fellow developers and potential collaborators.
+                  Feel free to reach out through any of these channels. I'm
+                  always excited to connect with fellow developers and potential
+                  collaborators.
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -103,7 +108,8 @@ const Contact = () => {
                   <h4 className="text-lg font-semibold">Location</h4>
                 </div>
                 <p className="text-muted-foreground">
-                  Based in India, available for remote work worldwide and open to relocation for the right opportunity.
+                  Based in India, available for remote work worldwide and open
+                  to relocation for the right opportunity.
                 </p>
               </CardContent>
             </Card>
@@ -112,7 +118,9 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="card-hover">
             <CardHeader>
-              <h3 className="text-2xl font-bold gradient-text">Send a Message</h3>
+              <h3 className="text-2xl font-bold gradient-text">
+                Send a Message
+              </h3>
               <p className="text-muted-foreground">
                 Have a project in mind? Let's discuss how we can work together.
               </p>
@@ -124,10 +132,10 @@ const Contact = () => {
                     <label htmlFor="name" className="text-sm font-medium">
                       Name *
                     </label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your Name" 
-                      required 
+                    <Input
+                      id="name"
+                      placeholder="Your Name"
+                      required
                       className="focus:ring-primary focus:border-primary"
                     />
                   </div>
@@ -135,43 +143,43 @@ const Contact = () => {
                     <label htmlFor="email" className="text-sm font-medium">
                       Email *
                     </label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@example.com" 
-                      required 
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="your.email@example.com"
+                      required
                       className="focus:ring-primary focus:border-primary"
                     />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium">
                     Subject *
                   </label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Project Discussion" 
-                    required 
+                  <Input
+                    id="subject"
+                    placeholder="Project Discussion"
+                    required
                     className="focus:ring-primary focus:border-primary"
                   />
                 </div>
-                
+
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
                     Message *
                   </label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me about your project or just say hello!" 
-                    required 
+                  <Textarea
+                    id="message"
+                    placeholder="Tell me about your project or just say hello!"
+                    required
                     rows={6}
                     className="focus:ring-primary focus:border-primary resize-none"
                   />
                 </div>
-                
-                <Button 
-                  type="submit" 
+
+                <Button
+                  type="submit"
                   className="w-full neon-glow pulse-glow"
                   disabled={isSubmitting}
                 >
