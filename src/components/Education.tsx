@@ -29,7 +29,7 @@ const Education = () => {
       degree: "B.Tech in Computer Science",
       institution: "KCC Institute Of Technology and Management",
       duration: "Aug 2017 - Oct 2021",
-      location: "Punjab, India",
+      location: "Greater Noida, Uttar Pradesh, India",
       grade: "B.S. in Computer Science",
       highlights: [
         "Graduated with excellent academic performance",
