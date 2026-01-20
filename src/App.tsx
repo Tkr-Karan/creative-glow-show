@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Snowfall from "react-snowfall";
@@ -14,9 +15,20 @@ const isWinter =
   new Date().getMonth() === 0 ||
   new Date().getMonth() === 1;
 
-const App = () => (
+const App = () => {
+  const [showSnowfall, setShowSnowfall] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSnowfall(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return (
   <QueryClientProvider client={queryClient}>
-    {isWinter && (
+    {isWinter && showSnowfall && (
       <Snowfall
         style={{
           position: "fixed",
@@ -38,5 +50,6 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
+};
 export default App;

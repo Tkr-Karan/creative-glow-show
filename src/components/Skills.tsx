@@ -58,6 +58,8 @@ const Skills = () => {
         { name: "MongoDB", level: 75 },
         { name: "MySQL", level: 70 },
         { name: "REST APIs", level: 85 },
+        { name: "Python", level: 80 },
+        { name: "Fast API", level: 50 },
       ],
     },
     {
@@ -82,6 +84,7 @@ const Skills = () => {
         { name: "Docker", level: 70 },
         { name: "VS Code", level: 95 },
         { name: "Jenkins", level: 65 },
+        { name: "Vite", level: 75 },
         { name: "Jest", level: 75 },
         { name: "Webpack", level: 70 },
       ],
@@ -153,7 +156,7 @@ const Skills = () => {
                       className={`p-3 rounded-xl bg-gradient-to-br ${category.bgColor} group-hover:scale-110 transition-transform duration-500`}
                     >
                       <IconComponent
-                        className={`h-7 w-7 bg-gradient-to-br ${category.color} bg-clip-text text-transparent`}
+                        className={`h-7 w-7 text-primary`}
                       />
                     </div>
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">

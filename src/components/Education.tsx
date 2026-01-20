@@ -47,6 +47,7 @@ const Education = () => {
     { name: "Node.js Backend Development", icon: Award },
     { name: "MongoDB Database Design", icon: Award },
     { name: "System Design Principles", icon: Award },
+    { name: "Python Developer", icon: Award },
   ];
 
   return (

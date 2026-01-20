@@ -18,6 +18,8 @@ const Hero = () => {
   const typewriterTexts = [
     "Software Developer Engineer",
     "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Developer",
     "React Specialist",
     "Passionate Learner",
     "Tech Enthusiast",
@@ -86,7 +88,7 @@ const Hero = () => {
         {techStack.map((tech, index) => (
           <Badge
             key={tech.name}
-            className={`tech-badge absolute cursor-default pointer-events-auto flex items-center gap-2 px-4 py-2.5 backdrop-blur-md border border-primary/20 bg-primary/5 hover:bg-primary/10 transition-all duration-300 ${tech.color}`}
+            className={`tech-badge absolute cursor-default pointer-events-auto flex items-center gap-2 px-4 py-2.5 backdrop-blur-md border border-primary/20 bg-primary/5 hover:bg-primary/10 transition-all duration-1000 ${tech.color}`}
             style={{
               top: `${15 + index * 14}%`,
               left: `${10 + (index % 2) * 75}%`,
@@ -136,8 +138,8 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            React Developer with{" "}
-            <span className="text-primary font-semibold">3+ years</span> of
+            Software Developer with{" "}
+            <span className="text-primary font-semibold">4+ years</span> of
             experience building high-performance UIs using TypeScript and
             Tailwind CSS. Proficient in Micro-Frontend architecture, CI/CD
             automation, and security compliance, focused on delivering optimized
@@ -158,7 +160,7 @@ const Hero = () => {
           <Button
             size="lg"
             variant="outline"
-            className="group backdrop-blur-sm bg-background/50 border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 hover:scale-105"
+            className="group backdrop-blur-sm bg-background/50 border-primary/30 hover:bg-primary hover:border-primary/50 transition-all duration-300 hover:scale-105"
             onClick={() => scrollToSection("experience")}
           >
             View My Work
@@ -202,7 +204,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="absolute left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
             onClick={() => scrollToSection("about")}
             className="group flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors"

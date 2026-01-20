@@ -22,7 +22,7 @@ const About = () => {
     {
       icon: Database,
       title: "Backend & Database",
-      description: "Node.js, Express, MongoDB, MySQL",
+      description: "Node.js, Python, Express, MongoDB, MySQL",
       color: "from-green-500/20 to-emerald-500/20",
       iconColor: "text-green-400",
       gradient: "from-green-500 to-emerald-500",
@@ -38,9 +38,9 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: TrendingUp, label: "3+ Years", value: "Experience" },
+    { icon: TrendingUp, label: "4+ Years", value: "Experience" },
     { icon: Target, label: "50+", value: "Projects" },
-    { icon: Zap, label: "100%", value: "Dedication" },
+    { icon: Zap, label: "100%", value: "Dedication and Ownership" },
   ];
 
   return (
@@ -60,9 +60,10 @@ const About = () => {
             Who I Am
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate software developer with expertise in modern web
-            technologies, dedicated to creating exceptional user experiences and
-            innovative solutions.
+            Passionate Full Stack Developer with strong expertise in modern
+            frontend and backend technologies, dedicated to building scalable
+            applications, delivering exceptional user experiences, and designing
+            robust architectural solutions.
           </p>
         </div>
 
@@ -136,7 +137,7 @@ const About = () => {
               <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
                 <p className="relative pl-6 border-l-2 border-primary/30">
                   With over{" "}
-                  <span className="text-primary font-semibold">3 years</span> of
+                  <span className="text-primary font-semibold">4 years</span> of
                   experience in software development, I've been passionate about
                   creating high-performance web applications that solve
                   real-world problems. My journey started with a fascination for

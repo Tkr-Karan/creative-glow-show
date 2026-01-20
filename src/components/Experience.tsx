@@ -29,6 +29,9 @@ const Experience = () => {
         "JavaScript",
         "MUI",
         "Vite",
+        "Python",
+        "Docker",
+        "ShadCN UI",
       ],
       color: "from-blue-500 to-cyan-500",
     },
@@ -44,7 +47,7 @@ const Experience = () => {
         "Resolved critical properties/panel rendering design issues across multiple features",
         "Led code migration and refactoring initiative to modernize the codebase",
       ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "React", "Node.js"],
+      technologies: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "Jenkins"],
       color: "from-green-500 to-emerald-500",
     },
     {
